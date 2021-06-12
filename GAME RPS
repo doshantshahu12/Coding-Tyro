@@ -1,0 +1,45 @@
+# Rock Paper Scissor Game
+import random
+
+def gamewin(comp,you):
+    if comp==you:   #if two value are equal declare  tie!
+        return None 
+    elif comp=="r":    #check all possibilities of r
+        if you=="s":
+            return False
+        elif you=="p":
+            return True
+    elif comp=="p": #check all possibilities of p
+        if you=="r":
+            return False
+        elif you=="s":
+            return True
+    elif comp=="s":  #check all possibilities of s
+        if you=="p":
+            return False
+        elif you=="r":
+            return True
+    
+
+
+print("comp turn : rock(r) paper(p) scissor(s)?")
+randNo=random.randint(1,3)
+if randNo==1:
+    comp="r"
+elif randNo==2:
+    comp="p"
+elif randNo==3:
+    comp="s"
+
+you=input("your turn  : rock(r) paper(p) scissor(s)?")
+a=gamewin(comp,you)
+
+print(f"computer choose {comp}")
+print(f"you choose {you}")
+
+if a==None:
+    print("the game is tie ")
+elif a:
+    print("you win")
+else:
+    print("you loose ")
