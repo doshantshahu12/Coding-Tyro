@@ -1,0 +1,24 @@
+#TYPE 1
+#USING ARITHMETIC OPERATIONS
+
+x=(3670)
+a=x//1000
+b=(x%1000)//100
+c=(x%100)//10
+d=x%10
+print(f"a={a}\nb={b}\nc={c}\nd={d}")
+
+
+
+
+
+
+#TYPE 2
+#USING STR FUNCTION
+
+x=(356)
+sx=str(x)
+a=int(sx[0])
+b=int(sx[1])
+c=int(sx[2])
+print(f"a={a}\nb={b}\nc={c}")
