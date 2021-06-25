@@ -1,0 +1,19 @@
+text=input("enter a text:\n ").lower()
+
+if("make a lot of money" in text):
+    spam=True
+elif("click now" in text):
+    spam=True
+elif("subscribe now" in text):
+    spam=True
+elif("buy now" in text):
+    spam=True
+elif("follow this" in text):
+    spam=True
+else:
+    spam=False
+
+if(spam):
+     print("#SPAM ALERT") 
+else:
+    print("this text is not a spam")  
