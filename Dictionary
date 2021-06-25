@@ -1,0 +1,10 @@
+my_dict={
+"decipher":"decode",
+"pious":"devoutly religous",
+"infallible":"incapable of making mistakes",
+"catastrophe":"disaster",
+"secluded":"not seen or visited by many people"
+}
+print("options are",my_dict.keys())
+a=input("enter the word:\n")
+print("meaning of your word is :",my_dict[a])
